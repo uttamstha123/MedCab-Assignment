@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first {
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: space-between; */
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+
+
+
+.leftContainer {
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftContainer .heading {
+    width: 60%;
+}
+
+.leftContainer .heading span {
+    font-weight: normal;
+}
+
+.leftContainer .form {
+    /* border: 1px solid black; */
+    height: auto;
+    width: 60%;
+    margin: auto;
+    padding: 3%;
+}
+
+.leftContainer .outerBtn {
+    width: 60%;
+    height: 8%;
+    border-radius: 50px;
+    color: rgb(211, 21, 21);
+    font-weight: 600;
+}
+
+.form .uBtn {
+    border-radius: 50px;
+}
+
+.form label {
+    font-weight: 600;
+}
+
+.form .searchBtn {
+    width: 100%;
+}
+
+.image1 {
+    width: 50%;
+    /* border: 1px solid red; */
+
+}
+
+.image1 img {
+
+    height: 100%;
+    width: 100%;
+    /* width: 100%; */
+    /* margin-right: 0; */
+}
+
+@media only screen and (max-width: 768px) {
+    .first {
+        /* border: 1px solid; */
+        height: auto;
+        flex-direction: column;
+    }
+
+    .leftContainer {
+        width: 100%;
+    }
+
+    .leftContainer .heading {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .leftContainer .form {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .leftContainer .outerBtn {
+        /* margin-top: 5%; */
+        /* margin-bottom: 0; */
+        width: 90%;
+    }
+
+    .image1{
+        width: 100%;
+    }
+
+
+}
+
+.second {
+    /* border: 1px solid; */
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 5%; */
+    padding: 5% 0 5% 0;
+}
+
+.second .image2 {
+    width: 35%;
+}
+
+.second .image2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.second .about {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 62%;
+}
+
+@media only screen and (max-width: 768px) {
+    .second{
+        /* border: 1px solid green; */
+        flex-direction: column;
+        /* height: auto; */
+        
+    }
+
+    .second .image2 {
+        display: none;
+    }
+
+    .second .about {
+        width: 100%;
+        margin-top: 5%;
+        align-items: center;
+        text-align: justify;
+        
+    }
+
+    .about p{
+        font-size: 10px;
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+    }
+
+}
+
+.third {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10% 0 10%;
+}
+
+.third .content-box {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+}
+
+.third .types {
+    /* border: 1px solid; */
+    height: 100vh;
+    ;
+    width: 40%;
+    display: flex;
+
+}
+
+.third .types .ambu {
+    /* border: 1px solid; */
+    border-radius: 10%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third .types .ambu .ambuImg {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+}
+
+.third .types .ambu img {
+    height: 3rem;
+}
+
+.third .details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* border: 2px solid green; */
+}
+
+.third .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.details .top .image {
+    display: flex;
+    justify-content: center;
+}
+
+.details img {
+    height: 5rem;
+}
+
+.details .bottom .facilities {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.third .download {
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .third .content-box {
+        flex-direction: column;
+    }
+
+    .third .types {
+        /* border: 2px solid red; */
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+    }
+
+    .third .types .ambu {
+        width: 40%;
+        font-size: 10px;
+    }
+
+    .third .details {
+        margin-top: 10%;
+        margin-left: 0 !important;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .details .bottom {
+        padding: 2% !important;
+    }
+    .details .bottom .facilities 
+    {
+        width: 80%;
+    }
+}
